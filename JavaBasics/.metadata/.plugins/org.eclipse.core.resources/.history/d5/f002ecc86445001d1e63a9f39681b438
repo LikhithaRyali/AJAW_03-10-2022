@@ -1,0 +1,15 @@
+package com.lambda.supplier;
+
+import java.util.function.Supplier;
+
+public class GetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Supplier<Double> randomNumber = () -> Math.random();
+		System.out.println(randomNumber);
+
+	}
+
+}

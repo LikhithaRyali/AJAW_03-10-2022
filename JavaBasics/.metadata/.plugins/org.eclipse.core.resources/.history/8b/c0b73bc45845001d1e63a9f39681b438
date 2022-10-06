@@ -1,0 +1,23 @@
+package com.functional.interfaces;
+
+public class User {
+	String name;
+	String role;
+	User(String n, String r) {
+		name = n;
+		role = r;
+	}
+	public String getName() {
+		return name;
+	}
+	
+	public String getRole() {
+		return role;
+	}
+	@Override
+	public String toString() {
+		return "FilterDevPredicate [name=" + name + ", role=" + role + "]";
+	}
+	
+
+}

@@ -1,0 +1,10 @@
+package com.lambda.consumer;
+
+public class AndThenDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

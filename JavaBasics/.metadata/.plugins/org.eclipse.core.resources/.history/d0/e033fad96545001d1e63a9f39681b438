@@ -1,0 +1,5 @@
+package com.lambda.method;
+
+public class StaticMethod {
+
+}

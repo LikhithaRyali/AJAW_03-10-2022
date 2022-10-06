@@ -1,0 +1,5 @@
+package com.functional.interfaces;
+
+public class FilterDevPredicate {
+
+}

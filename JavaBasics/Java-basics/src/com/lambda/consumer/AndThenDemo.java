@@ -1,0 +1,28 @@
+package com.lambda.consumer;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+
+public class AndThenDemo {
+
+	public static void main(String[] args) {
+		
+		Consumer<List<Integer>> modify = list -> {
+			for(int i = 0 ; i < list.size(); i++) {
+				list.set(i, 2 * list.get(i));
+			}
+		};
+		
+		Consumer<List<Integer>>	displayList = list -> list.stream().forEach(a -> System.out.println(a * 10));
+				
+				List<Integer> list = new ArrayList<>();
+				list.add(25);
+				list.add(50);
+				list.add(3);
+				
+				modify.andThen(displayList).accept(list);
+
+	}
+
+}

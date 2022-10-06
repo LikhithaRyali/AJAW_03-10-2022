@@ -1,0 +1,14 @@
+package com.lambda.consumer;
+
+import java.util.function.Consumer;
+
+public class AcceptDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Consumer<Integer> display = a -> System.out.println(a*a);
+		
+		display.accept(123);
+	}
+
+}

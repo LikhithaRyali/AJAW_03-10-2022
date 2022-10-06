@@ -1,0 +1,22 @@
+package com.functional.interfaces;
+
+import java.util.function.Predicate;
+
+public class PredicateExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Predicate<Integer> isAnAdult = i -> (i > 18);
+		
+		Predicate<Integer> isUnderAged = i -> (i < 18);
+		
+		Predicate<Integer> isRetired = i -> (i > 60);
+		
+		boolean result = isAnAdult.and(isRetired).test(50);
+		
+		System.out.println(result);
+		System.out.println(isUnderAged.test(15));
+
+	}
+
+}

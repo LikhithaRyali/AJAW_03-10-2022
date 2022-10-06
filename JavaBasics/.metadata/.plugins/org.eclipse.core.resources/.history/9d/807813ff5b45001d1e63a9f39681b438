@@ -1,0 +1,34 @@
+package com.functional.interfaces;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class User {
+	String name;
+	String role;
+	User(String n, String r) {
+		name = n;
+		role = r;
+	}
+	public String getName() {
+		return name;
+	}
+	
+	public String getRole() {
+		return role;
+	}
+	@Override
+	public String toString() {
+		return "FilterDevPredicate [name=" + name + ", role=" + role + "]";
+	}
+	
+	public static void main(String[] args) {
+		List<User> users = new ArrayList<User>();
+		users.add(new User("Likhithaa", "snr-Dev"));
+		users.add(new User("Surya", "jnr-Dev"));
+		users.add(new User("Mounika", "snr-Dev"));
+		users.add(new User("Ishwarya", "snr-Dev"));
+		users.add(new User("Mounisha", "jnr-Dev"));
+		users.add(new User("Vineetha", "snr-Dev"));	
+	}
+}

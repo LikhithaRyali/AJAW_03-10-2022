@@ -1,0 +1,41 @@
+package com.lambda.method;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class User{
+	private String name;
+	private Integer age;
+	
+	public User(String name, Integer age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public Integer getAge() {
+		return age;
+	}
+	
+	
+}
+
+public class StaticMethod {
+	
+	public static int comparedByAge(User A, User B) {
+		return A.getAge().compareTo(B.getAge());
+	}
+	public static void main(String[] args) {
+		List<User> userlist = new ArrayList<>();
+		
+		userlist.add(new User("Likhithaa", 25));
+		userlist.add(new User("Niyathi", 9));
+		userlist.add(new User("Kim SeokJin", 30));
+		userlist.add(new User("Lee DongWook", 40));
+	}
+
+}
