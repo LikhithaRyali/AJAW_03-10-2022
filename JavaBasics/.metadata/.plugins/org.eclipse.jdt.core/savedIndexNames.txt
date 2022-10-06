@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\AJAW_FSE_Course_03-10-2022\JavaBasics\.metadata\.plugins\org.eclipse.jdt.core
+566930034.index
+1602128660.index

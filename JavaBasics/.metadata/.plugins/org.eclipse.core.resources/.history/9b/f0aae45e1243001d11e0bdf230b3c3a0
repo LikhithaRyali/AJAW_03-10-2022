@@ -1,0 +1,28 @@
+package com.lambda;
+import java.util.Scanner;
+
+
+public class SortArrayWithLambda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub 
+		int arr[];
+		
+		Scanner sc = new Scanner(System.in);
+		arr = new int[sc.nextInt()];
+		
+		arr.forEach(n) -> {
+			if(n%2 == 0) {
+				System.out.println("EVEN");
+			}
+			else {
+				System.out.println("ODD");
+			}
+		};
+		
+
+		
+		
+	}
+
+}

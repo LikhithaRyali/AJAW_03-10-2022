@@ -1,0 +1,33 @@
+package com.lambda;
+
+import java.util.Scanner;
+
+interface check{
+	void checkingEvenOrOdd(int n);
+	void checkPrime(int n);
+	default void checkPalindrome(int n) {
+		int verify = n;
+		int rev = 0;
+		int rem = 0;
+		while(n<0) {
+			rem = n%10;
+			rev =+ rem;
+			n = n/10;
+		}
+		if(rev == verify) {
+			System.out.println("PALINDROME");
+		}
+	};
+	
+	
+}
+
+public class SortArrayWithLambda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+	}
+
+}

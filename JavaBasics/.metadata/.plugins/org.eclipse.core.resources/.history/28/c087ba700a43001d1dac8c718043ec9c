@@ -1,0 +1,23 @@
+package com.functional.interfaces;
+
+interface calculator {
+	default void add(int n1,int n2) {
+		System.out.println("Adding of two numbers: " + (n1 + n2));
+	}
+	
+	default void sub(int n1,int n2) {
+		System.out.println("Subtraction of two numbers: " + (n1 - n2));
+	}
+	
+	default void mul(int n1,int n2) {
+		System.out.println("Multiplication of two numbers: " + (n1 * n2));
+	}
+	
+	default void div(int n1,int n2) {
+		System.out.println("Dividing of two numbers: " + (n1/n2));
+	}
+}
+
+public class FI_Exmp3 {
+
+}

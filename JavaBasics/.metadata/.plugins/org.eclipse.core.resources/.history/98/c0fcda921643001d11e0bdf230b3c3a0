@@ -1,0 +1,31 @@
+package com.lambda;
+import java.util.List;
+import java.util.ArrayList;
+
+interface check{
+	void checking(int[] arr);
+}
+
+public class SortArrayWithLambda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<Integer> arr = new ArrayList<Integer>();
+		arr.add(34);
+		arr.add(545);
+		arr.add(57);
+		arr.add(1);
+		arr.add(98);
+
+		arr.forEach(i -> {
+			if (i % 2 == 0) {
+				System.out.println("EVEN");
+			} else {
+				System.out.println("ODD");
+			}
+		});
+
+	}
+
+}
